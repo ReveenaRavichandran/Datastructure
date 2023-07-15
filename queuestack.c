@@ -65,6 +65,12 @@ void dequeue()
 {
 	if (front ==0 && rear==0)
 	printf(" ** Queue is underflow **\n");
+	elif(front->next==0)
+       {
+	printf("%d\n",front->data);
+	front=0;
+	rear=0;
+	}
 	else 
 	{
 		temp=front;
